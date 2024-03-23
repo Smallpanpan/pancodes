@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>伪类/伪元素</title>
+<head>
+   
+</head>
+
+<body>
+    <style>
+        .arrow-right{
+            margin: 500px auto;
+            width:300px;
+            height:80px;
+            background-color: pink;
+            padding-left: 20px;
+        }
+    
+        .arrow-right:before{
+            background-color: pink;
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;  
+            border-top: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+            border-left: 20px solid pink;
+            position: relative;
+            top:14px;
+            left: 300px;
+        }
+          </style>
+          <p class="arrow-right">一起开黑吧？</p>
+</body>
+
+</html>

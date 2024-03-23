@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Table</title>
+    <link rel="stylesheet" href="./css/testDome.css" />
+    <!-- JS 导入 -->
+    <script src="./js/page/tableCommon.js"></script>
+</head>
+<style>
+    html{
+        font-size: 100px;
+    }
+    .body-one{
+        font-size: 0.32rem;
+        width:300px;
+        background-color: red;
+        padding:10px;
+        border-top:15px  ;
+        margin: 30px;
+    }
+</style>
+
+<body>
+    <div class="body-div">
+        <div class="body-one">测试固定头</div>
+        <p class="body-title">演示固定了头、第一列 、第二列以及最后一列</p>
+    </div>
+    <div id="tableDiv" style="width:500px; height:400px;overflow:auto;margin:0 auto;margin-top:50px;">
+        <!-- table必须加transform这个样式，否则垂直滚动的时候，会有问题 -->
+        <table style="transform-style:preserve-3d;">
+            <thead>
+                <tr>
+                    <th style="width:50px">Num</th>
+                    <th style="width:120px">Name</th>
+                    <th style="width:100px">Age</th>
+                    <th style="width:300px">Address</th>
+                    <th style="width:50px">Opt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>张三1</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>张三3</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>张三4</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>张三5</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>张三6</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>张三7</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>张三8</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>张三9</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>张三10</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>张三11</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>张三12</td>
+                    <td>10</td>
+                    <td>这是一条很长很长很长很长很长很长很长很长的文字</td>
+                    <td>
+                        <a href="">编辑</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

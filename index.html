@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sticky Footer</title>
+    <script>
+      function getSetimeout() { 
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log(255555);
+                resolve(255555);
+            }, 4000)
+        })
+      }
+     async function getUrl() {
+          await getSetimeout()
+          console.log(123);
+      }
+      getUrl();
+    </script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        text-align: center;
+      }
+
+      .content {
+        min-height: 100%;
+        margin-bottom: -50px; /* 等于 .footer 高度的相反数 */
+      }
+
+      .content-inside {
+        background-color: #c2ffa9;
+      }
+
+      .push {
+        height: 50px; /* .push 是额外的占位元素，高度与 .footer 一致 */
+      }
+
+      .footer {
+        height: 50px;
+        line-height: 50px; /* 实现文字垂直居中 */
+        background-color: #3ba4f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <!-- div.content-inside 的高度可以随意设置，亦可根据内容高度自适应 -->
+      <div class="content-inside">
+        <!-- content -->
+        <div>smallpanpan</div>
+        <div>test</div>
+        <div >名跳转测试</div>
+      </div>
+      <!-- div.push 是额外的占位元素，高度与 div.footer 一致 -->
+      <div class="push"></div>
+    </div>
+    <div class="footer">Sticky Footer</div>
+  </body>
+</html>

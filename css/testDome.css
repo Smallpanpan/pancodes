@@ -1,0 +1,103 @@
+table {
+    table-layout: fixed;
+    /*使用fixed实现th固定宽度*/
+    width: 100%;
+    /*在使用fixed的时候，必须指定width，否则还是自适应宽度*/
+    border-spacing: 0;
+}
+th {
+    background: #888;
+}
+th,
+td {
+    border: 1px solid #333;
+    /*一定要同时有border和outline不然滚动会看着不协调*/
+    outline: 1px solid #333;
+    background: #fff;
+    /* 盒子类型 */
+    display: flex;      
+    /* 定位类型 static（静态定位） relative(相对定位，原点在左上方，未脱离文本流) absolute（绝对定位 脱离文本流 原点在非static定位的父元素）*/
+    /* 主轴排序方向  column垂直反向*/
+    flex-direction: row;
+    /* 主轴排列方式(是否换行)  nowrap 不换行 */
+    flex-wrap: nowrap;   
+    /* 主轴对齐方式  center 居中 flex-start 默认左对齐 flex-end向右对齐 space-between space-around*/
+    justify-content: center;
+    /* 对称轴对齐方式 stretch 交叉轴平铺*/
+    align-items: center;
+    /* 多轴对齐方式 */
+    align-content: flex-end;
+    position: relative;   
+    
+}
+.body-title{
+    text-align:center;
+    margin-top: 30px;
+    color: #888;
+}
+.body-one{
+    text-align: center;
+    color: brown;
+    font-size: 36px;
+}
+.body-div {
+    font-size: 20px;
+}
+
+
+/* 居中 transform偏移*/
+.son{
+    position:absolute;
+    left: 50%;
+    right:50%;
+    transform:translateX(-50%) translateY(-50%);   
+}
+
+/* flex布局 */
+.father{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.son{
+    position: absolute;
+    top:calc(50%-50px);
+    left: calc(50%-50px);
+    /* margin-top margin-left */
+}
+
+/* 实现一根横线 */
+.son :after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    border-top:1px solid red;
+    color:red;
+    transform:scaleYa(0.5);
+}
+/* 两栏布局 */
+.father{
+    display:flex;
+}
+.left{
+    width:50px;
+    flex:1;
+}
+right{
+    flex:0;
+}
+
+/* 使用浮动 */
+.one{
+    float: left;
+    width:500px;
+}
+.two{
+    float:right;
+}
+
+
+
