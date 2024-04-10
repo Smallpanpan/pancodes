@@ -56,10 +56,13 @@ function jumpWay(n) {
     }
     return dp[n]
 }
-
-
-// 输出
-// 3级跳的 
-console.log('n=n----',jumpWays2(5))
-// 4级别跳
-// 四级以此类推
+// 青蛙跳算法   
+function jumpWay(n) {
+    if(n<=0) {
+        return 0;
+    }else if(n < 3) {
+        return n;
+    }else if(n === 3) {
+        return 4;
+    }   
+}
